@@ -19,7 +19,7 @@ void setup(){
 void loop() {
   delay(5000);
   int analogSoilHum = analogRead(A0);
-  int analogAirHum = dht.readTemperature();
+  int analogAirHum = dht.readHumidity();
 
   radio.stopListening();
 
